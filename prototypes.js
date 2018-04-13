@@ -3,8 +3,10 @@
 
 //Create a prototype for a String called reverse that returns the string but, like, reversed.
 
-//Code here
 
+String.prototype.reverse = function() {
+  return this.split("").reverse().join("");
+};
 
 //////////////////PROBLEM 2////////////////////
 
@@ -21,5 +23,19 @@ function Person(name, age) {
   this.qualityOfCode = 5;
 }
 
-//Code here
+Person.prototype.drinkCoffee = function(){
+  this.energy = this.energy+10;
+  this.linesOfCode = this.linesOfCode + 50
+  this.qualityOfCode = this.qualityOfCode - 1;
+  return new Person
+}
+
+Person.prototype.readDocumentation = function(){
+  this.energy = this.energy - 20;
+  this.linesOfCode = this.linesOfCode - 30;
+  this.qualityOfCode = this.qualityOfCode + 3;
+  return new Person
+}
+
+
 
